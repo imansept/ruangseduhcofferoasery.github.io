@@ -115,9 +115,93 @@
       padding:30px;
       color:#aaa;
     }
-  </style>
+  </style>/* Gaya untuk Bagian Katalog */
+.menu-section {
+    padding: 60px 20px;
+    background: #1a1a1a;
+    text-align: center;
+}
+.menu-section h2 {
+    font-size: 36px;
+    color: #d4a373;
+    margin-bottom: 40px;
+}
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.menu-card {
+    background: #262626;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.menu-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.menu-info {
+    padding: 20px;
+}
+.menu-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.menu-info p {
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.price {
+    font-weight: bold;
+    color: #d4a373;
+    font-size: 18px;
+}
 </head>
-<body>
+<body><!-- Bagian Katalog Menu -->
+<section class="menu-section" id="katalog">
+    <h2>Katalog Kopi Kami</h2>
+    <div class="menu-container">
+
+        <!-- Produk 1 -->
+        <div class="menu-card">
+            <img src="https://unsplash.com" alt="Espresso">
+            <div class="menu-info">
+                <h3>Espresso Bold</h3>
+                <p>Ekstrak kopi murni dengan aroma pekat dan crema tebal.</p>
+                <span class="price">Rp 20.000</span>
+            </div>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="menu-card">
+            <img src="https://unsplash.com" alt="Latte">
+            <div class="menu-info">
+                <h3>Creamy Latte</h3>
+                <p>Paduan espresso lembut dengan susu segar pilihan.</p>
+                <span class="price">Rp 25.000</span>
+            </div>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="menu-card">
+            <img src="https://unsplash.com" alt="Robusta">
+            <div class="menu-info">
+                <h3>Robusta Java</h3>
+                <p>Biji kopi pilihan dari tanah Jawa dengan rasa kuat alami.</p>
+                <span class="price">Rp 30.000</span>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 <header>
   <div class="hero">
